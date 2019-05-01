@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Home Page</title>
-</head>
-<body>
 
-    
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <!--Menu-->
+        <nav class="uk-navbar uk-navbar-container uk-margin">
+                <div class="uk-navbar-right">
+                        <div class="uk-container uk-margin-top uk-position-left">
+                        <img src="imgs/logo.png" width="65px" alt="">uper News
+                    </div>
+                    <button class="uk-navbar-toggle uk-margin-right" uk-navbar-toggle-icon href="# uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip"></button>
+                </div>
+            </nav>
+
+<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <div class="uk-width-1-2@s">
+                <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+                    <li class="uk-active"><a href="#">Menu</a></li>
+                    <li class="uk-parent">
+                        <a href="#">Notícias</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Notícia 1</a></li>
+                            <li><a href="#">Notícia 2</a></li>
+                            <li><a href="#">Notícia 3</a></li>
+                        </ul>
+                        <br>
+                    </li>
+
+                    <li> Redes</li>
+                    <br>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+<a href="" class="uk-icon-button" uk-icon="github"></a>
+<div class="uk-margin">
+       
+                </ul>
+            </div>
+    </div>
+</div>
+
+
+    </header>
 
 </body>
+
 </html>
