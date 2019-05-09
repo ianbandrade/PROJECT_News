@@ -4,3 +4,12 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
 }
+
+#logo {
+    width: 10%;
+    padding: 0 auto;
+}
+
+@media screen and (min-width: 580) {
+  
+}
