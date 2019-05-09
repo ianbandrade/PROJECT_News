@@ -10,109 +10,137 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Home</title>
 </head>
 
+
+
 <body>
-    <header>
+
+    <section class="grid-container">
         <!--Menu-->
-        <nav class="uk-navbar uk-navbar-container uk-margin">
-            <div class="uk-navbar-right">
-                <div class="uk-container uk-margin-top uk-position-left">
-                    <img src="imgs/logo.png" width="60px" alt="">
-                </div>
-                <button class="uk-navbar-toggle uk-margin-right" uk-navbar-toggle-icon
-                    href="# uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip"></button>
-            </div>
-        </nav>
+        <div class="menu">
+            <header>
+                <nav class="uk-navbar uk-navbar-container uk-margin">
+                    <div class="uk-navbar-right">
+                        <div class="uk-container uk-position-center">
+                            <img class="logo" src="imgs/logo.png" width="85px" alt="">
+                        </div>
+                        <button class="uk-navbar-toggle uk-margin-right" uk-navbar-toggle-icon
+                            href="# uk-button uk-button-default" type="button"
+                            uk-toggle="target: #offcanvas-flip"></button>
+                    </div>
+                </nav>
 
-        <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-            <div class="uk-offcanvas-bar">
+                <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                    <div class="uk-offcanvas-bar">
 
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-                <div class="uk-width-1-2@s">
-                    <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
-                        <li class="uk-active"><a href="#">Menu</a></li>
-                        <li class="uk-parent">
-                            <a href="#">Notícias</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="#">Notícia 1</a></li>
-                                <li><a href="#">Notícia 2</a></li>
-                                <li><a href="#">Notícia 3</a></li>
-                                <li><a href="#">Notícia 4</a></li>
+                        <div class="uk-width-1-2@s">
+                            <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+                                <li class="uk-active"><a href="#">Menu</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Notícias</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#">Notícia 1</a></li>
+                                        <li><a href="#">Notícia 2</a></li>
+                                        <li><a href="#">Notícia 3</a></li>
+                                        <li><a href="#">Notícia 4</a></li>
+                                    </ul>
+                                    <br>
+                                </li>
+
+                                <li> Redes</li>
+                                <br>
+                                <a href="https://www.instagram.com/ianbandrade/?hl=pt-br"
+                                    class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                                <a href="https://twitter.com/@ianbandrade" class="uk-icon-button uk-margin-small-right"
+                                    uk-icon="twitter"></a>
+                                <a href="https://www.facebook.com/ian.bittencourt14"
+                                    class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                                <a href="https://github.com/ianbandrade" class="uk-icon-button" uk-icon="github"></a>
+                                <div class="uk-margin">
+
                             </ul>
-                            <br>
-                        </li>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
 
-                        <li> Redes</li>
-                        <br>
-                        <a href="https://www.instagram.com/ianbandrade/?hl=pt-br"
-                            class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-                        <a href="https://twitter.com/@ianbandrade" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="twitter"></a>
-                        <a href="https://www.facebook.com/ian.bittencourt14"
-                            class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-                        <a href="https://github.com/ianbandrade" class="uk-icon-button" uk-icon="github"></a>
-                        <div class="uk-margin">
+        <!--Notícias-->
 
-                    </ul>
+        <div class="n1">
+
+            <div class="uk-inline"">
+                            <a href=""><img src=" imgs/n1.jpg" alt="" width="960px"></a>
+                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                    <p class="uk-text-justify">LoL: Riot suspende jogador que deu spoiler de Vingadores:
+                        Ultimato</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="n2">
+
+            <div class="uk-inline"">
+                        <a href=""><img src=" imgs/n2.jpg" alt="" width="960px"></a>
+                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                    <p class="uk-text-justify">LoL: OPK vence INTZ Academy e se mantém no Circuitão</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="n3">
+
+            <div class="uk-inline"">
+                        <a href=""><img src=" imgs/n3.jpg" alt="" width="960px"></a>
+
+                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                    <p class="uk-text-justify">LoL: INTZ lança uniforme comemorativo com as cores do Brasil
+                        antes do
+                        MSI</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="n4">
+
+            <div class="uk-inline"">
+                        <a href=""><img src=" imgs/n4.jpg" alt="" width="960px"></a>
+                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                    <p class="uk-text-justify">LoL: Após revelação de site, Riot investiga caso de racismo na
+                        Echo
+                        Fox</p>
                 </div>
             </div>
         </div>
-    </header>
-    <!--Notícias-->
 
+        <br>
+        
+        <!--Rodapé-->
+        <div class="footer">
 
-    <div class="uk-child-width-1-2@m uk-display-block" uk-grid>
-        <div>
-            <article>
-                <div class="uk-inline">
-                    <a href=""><img src="imgs/n1.jpg" alt=""></a>
-                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                        <p class="uk-text-justify">LoL: Riot suspende jogador que deu spoiler de Vingadores: Ultimato
-                        </p>
-                    </div>
-                </div>
-
-                <div class="uk-inline">
-                    <a href=""><img src="imgs/n2.jpg" alt=""></a>
-                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                        <p class="uk-text-justify">LoL: OPK vence INTZ Academy e se mantém no Circuitão</p>
-                    </div>
-                </div>
-
-                <div class="uk-inline">
-                    <a href=""><img src="imgs/n3.jpg" alt=""></a>
-
-                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                        <p class="uk-text-justify">LoL: INTZ lança uniforme comemorativo com as cores do Brasil antes do
-                            MSI</p>
-                    </div>
-                </div>
-
-                <div class="uk-inline">
-                    <a href=""><img src="imgs/n4.jpg" alt=""></a>
-                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                        <p class="uk-text-justify">LoL: Após revelação de site, Riot investiga caso de racismo na Echo
-                            Fox</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div>
-
-
-            <!--Rodapé-->
             <footer class="uk-navbar-container">
                 <p class="uk-text-center">
                     <i class="far fa-envelope"></i> ian.andrade@sga.pucminas.br <br>
                     Copyright (c) 2019 Ian Bittencourt <br>
                     All Rights Reserved
                 </p>
-
             </footer>
+        </div>
+
+
+    </section>
+
+
 
 </body>
 
