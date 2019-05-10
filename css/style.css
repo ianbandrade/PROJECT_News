@@ -1,29 +1,16 @@
-#logo {
-    height: 10%;
-    width: 30%;
-    box-sizing: border-box;
-    padding: 2px;
-}
+
 
 #logo1 {
     position: right;
-    height: 10%;
-    width: 15%;
-    margin-left: 80%;
+    width: 100px;
     padding: 5px;
 }
-#menu {
-    
-}
 
-#menu-bar {
-
-}
 
 @media screen and (min-width: 300px)
 {
     #logo {
-        width: 25%;
+        width: 60px;
         box-sizing: border-box;
         padding: 5px;
     }
@@ -33,7 +20,7 @@
 @media screen and (min-width: 768px)
 {
     #logo {
-        width: 22%;
+        width: 90px;
         box-sizing: border-box;
         padding: 15px;
     }
@@ -42,43 +29,8 @@
 @media screen and (min-width: 800px)
 {
     #logo {
-        width: 22%;
+        width: 100px;
         box-sizing: border-box;
         padding: 18px;
-    }
-}
-
-@media screen and (min-width: 990px)
-{
-    #logo {
-        width: 22%;
-        box-sizing: border-box;
-        padding: 18px;
-    }
-}
-
-@media screen and (min-width: 1030px)
-{
-    #logo {
-        width: 22%;
-        box-sizing: border-box;
-        padding: 20px;
-    }
-}
-
-@media screen and (min-width: 1170px)
-{
-    #logo {
-        width: 23%;
-        box-sizing: border-box;
-        padding: 35px;
-    }
-}
-@media screen and (min-width: 1440px)
-{
-    #logo {
-        width: 28%;
-        box-sizing: border-box;
-        padding: 50px;
     }
 }
