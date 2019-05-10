@@ -16,132 +16,168 @@
 </head>
 
 
-
 <body>
 
-    <section class="grid-container">
-        <!--Menu-->
-        <div class="menu">
-            <header>
-                <nav class="uk-navbar uk-navbar-container uk-margin">
-                    <div class="uk-navbar-right">
-                        <div class="uk-container uk-padding-large">
-                            <img id="logo" class="uk-position-center" src="imgs/logo.png" alt="">
-                        </div>
-                        <button class="uk-navbar-toggle uk-position-right" uk-navbar-toggle-icon
-                            href="# uk-button uk-button-default" type="button"
-                            uk-toggle="target: #offcanvas-flip"></button>
-                    </div>
-                </nav>
+    <!--Menu hambúrguer-->
+    <nav id="menu" class="uk-navbar-container uk-hidden@m" uk-navbar>
+        <div id="menu-bar" class="uk-navbar-left uk-padding-remove">
+            <button class="uk-button uk-button-link" type="button" uk-toggle="target: #offcanvas-push"> <a
+                    class="uk-navbar-toggle" uk-navbar-toggle-icon></a></button>
 
-                <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-                    <div class="uk-offcanvas-bar">
+            <div id="offcanvas-push" uk-offcanvas="mode: push; uk-offcanvas=" olverlay: true">
+                <div class="uk-offcanvas-bar">
 
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-                        <div class="uk-width-1-2@s">
-                            <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
-                                <li class="uk-active"><a href="#">Menu</a></li>
-                                <li class="uk-parent">
-                                    <a href="#">Notícias</a>
-                                    <ul class="uk-nav-sub">
-                                        <li><a href="#">Notícia 1</a></li>
-                                        <li><a href="#">Notícia 2</a></li>
-                                        <li><a href="#">Notícia 3</a></li>
-                                        <li><a href="#">Notícia 4</a></li>
-                                    </ul>
-                                    <br>
-                                </li>
-
-                                <li> Redes</li>
+                    <div class="uk-width-1-2@s">
+                        <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+                            <br>
+                            <li class="uk-active"><a href="#">Página principal</a></li>
+                            <li class="uk-parent">
                                 <br>
-                                <a href="https://www.instagram.com/ianbandrade/?hl=pt-br"
-                                    class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-                                <a href="https://twitter.com/@ianbandrade" class="uk-icon-button uk-margin-small-right"
-                                    uk-icon="twitter"></a>
-                                <a href="https://www.facebook.com/ian.bittencourt14"
-                                    class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-                                <a href="https://github.com/ianbandrade" class="uk-icon-button" uk-icon="github"></a>
-                                <div class="uk-margin">
+                                <a href="#">Notícias</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="#">Notícia 1</a></li>
+                                    <li><a href="#">Notícia 2</a></li>
+                                    <li><a href="#">Notícia 3</a></li>
+                                    <li><a href="#">Notícia 4</a></li>
+                                </ul>
+                            </li>
 
-                            </ul>
-                        </div>
+                            <br>
+                            <li>Redes sociais</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-navbar-center uk-hidden@m"> <a class="uk-navbar-item uk-logo" href=""><img id="logo"
+                    src="imgs/logo.png" alt=""></a>
+
+        </div>
+
+    </nav>
+
+    <!--Menu display >= @m-->
+
+    <nav id="menu-full" class="uk-navbar-container uk-visible@m" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Página principal</a></li>
+                <li>
+                    <a href="#">Notícias</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+
+                            <li><a href="#">Notícia 1</a></li>
+                            <li><a href="#">Notícia 2</a></li>
+                            <li><a href="#">Notícia 3</a></li>
+                            <li><a href="#">Notícia 4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Rede Sociais</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href=""
+                                    class="uk-button uk-position-small uk-position-top-right uk-overlay uk-overlay-default"
+                                    uk-icon="twitter"></a></li>
+                            <li><a href=""
+                                    class="uk-button uk-position-small uk-position-top-center uk-overlay uk-overlay-default"
+                                    uk-icon="facebook"></a></li>
+                            <li><a href=""
+                                    class="uk-button uk-position-small uk-position-top-left uk-overlay uk-overlay-default "
+                                    uk-icon="instagram"></a></li>
+                            <li><br></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right"> <a class="uk-navbar-item uk-logo" href=""><img id="logo1" src="imgs/logo.png" alt=""></a>
+  
+        </div>
+    </nav>
+
+
+
+
+
+    <br>
+
+    <!--Notícias-->
+    <main uk-grid>
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+
+                <div class="uk-inline">
+                    <a href=""><img src="imgs/n1.jpg" alt=""></a>
+                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                        <p>LoL: Riot suspende jogador que deu spoiler de Vingadores: Ultimato</p>
                     </div>
                 </div>
-            </header>
-        </div>
 
-        <!--Notícias-->
+            </div>
+            <div>
 
-        <div class="n1">
-
-            <div class="uk-inline"">
-                            <a href=""><img src=" imgs/n1.jpg" alt="" width="960px"></a>
-                <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                    <p class="uk-text-justify">LoL: Riot suspende jogador que deu spoiler de Vingadores:
-                        Ultimato</p>
+                <div class="uk-inline">
+                    <a href=""><img src="imgs/n2.jpg" alt=""></a>
+                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                        <p>LoL: OPK vence INTZ Academy e se mantém no Circuitão</p>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
+            <div>
 
-
-        <div class="n2">
-
-            <div class="uk-inline"">
-                        <a href=""><img src=" imgs/n2.jpg" alt="" width="960px"></a>
-                <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                    <p class="uk-text-justify">LoL: OPK vence INTZ Academy e se mantém no Circuitão</p>
+                <div class="uk-inline">
+                    <a href=""><img src="imgs/n3.jpg" alt=""></a>
+                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                        <p>LoL: INTZ lança uniforme comemorativo com as cores do Brasil antes do MSI</p>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
+            <div>
 
-        <div class="n3">
-
-            <div class="uk-inline"">
-                        <a href=""><img src=" imgs/n3.jpg" alt="" width="960px"></a>
-
-                <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                    <p class="uk-text-justify">LoL: INTZ lança uniforme comemorativo com as cores do Brasil
-                        antes do
-                        MSI</p>
+                <div class="uk-inline">
+                    <a href=""><img src="imgs/n4.jpg" alt=""></a>
+                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                        <p>LoL: Após revelação de site, Riot investiga caso de racismo na Echo Fox</p>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-
-        <div class="n4">
-
-            <div class="uk-inline"">
-                        <a href=""><img src=" imgs/n4.jpg" alt="" width="960px"></a>
-                <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                    <p class="uk-text-justify">LoL: Após revelação de site, Riot investiga caso de racismo na
-                        Echo
-                        Fox</p>
-                </div>
             </div>
         </div>
-
-        <br>
-
-        <!--Rodapé-->
-        <div class="footer">
-
-            <footer class="uk-navbar-container">
-                <p class="uk-text-center">
-                    <i class="far fa-envelope"></i> ian.andrade@sga.pucminas.br <br>
-                    Copyright (c) 2019 Ian Bittencourt <br>
-                    All Rights Reserved
-                </p>
-            </footer>
         </div>
 
 
-    </section>
+    </main>
 
+    <br>
+    <!--Rodapé-->
+
+    <div class="footer">
+
+        <footer class="uk-navbar-container">
+            <p class="uk-text-center">
+                <i class="far fa-envelope"></i> ian.andrade@sga.pucminas.br <br>
+                Copyright (c) 2019 Ian Bittencourt <br>
+                All Rights Reserved
+            </p>
+        </footer>
+    </div>
 
 
 </body>
+
+
 
 </html>
