@@ -30,13 +30,14 @@ margin-top: 240px;
         padding: 5px;
     }
     #title {
+        align-items: justify;
         text-align: center;
         margin-top: 70px;
       
     }
     
     #description {
-    margin-top: 310px;
+    margin-top: 320px;
     }
     
     #img {
@@ -54,6 +55,7 @@ margin-top: 240px;
         padding: 5px;
     }
     #title {
+        align-items: justify;
         text-align: center;
         margin-top: 70px;
       
@@ -77,6 +79,7 @@ margin-top: 240px;
         padding: 15px;
     }
     #title {
+        align-items: justify;
         text-align: center;
         margin-top: 70px;
       
@@ -109,6 +112,7 @@ margin-top: 240px;
         padding: 15px;
     }
     #title {
+        align-items: justify;
         text-align: center;
         margin-top: 70px;
       
